@@ -1,0 +1,30 @@
+//info venant de l'arduino
+ const int MMardui=13;
+//utilisation d'un shield moteur sur arduino
+int D2 = 2;// envoyer le courant dans l'un ou dans l'autre fait varier le sens
+int D3 = 3;
+int val= 0;
+
+void setup()
+{
+    pinMode(MMardui, INPUT);
+    pinMode(D2, OUTPUT);
+    pinMode(D3, OUTPUT);
+}
+
+void loop()
+{
+val=digitalRead(MMardui);//lis la valeur du signal envoyé par arduino
+if info(HIGH);
+
+then D2(HIGH);//normalement ça fait monter le plateau sinn ça explose le rah c'est du 50/50
+D3(LOW);
+delay(30000);//attendre 30 sec le temps
+D2(LOW); //la normalement ça fait descendre le plateau mais pareil 50/50 je peux pas faire de test
+D3(HIGH); //je ne sais pas comment reset les trucs donc la ça va tourner indefinimment a
+ moins que ça ne tourne que l'orsque c'est on alors la marius ton signal
+devras etre de 1:00 au moins  je pense
+
+else D2(LOW);//la ça fait rien logique
+D3(LOW);
+}
