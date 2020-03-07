@@ -29,10 +29,10 @@ Le R.A.H
 
 -------------------------------Participants------------------------------------
 
-Mathieu Suinot
-Thomas Bernard
-Victor Labbarade
-Marius
+Mathieu Suinot;
+Thomas Bernard;
+Victor Labbarade;
+Marius;
 
 ------------------------------Documentation------------------------------------
 
