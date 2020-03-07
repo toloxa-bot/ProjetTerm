@@ -1,9 +1,14 @@
 # ProjetTerm
+
+
   Projet Terminal TS3
+
 
 ---------------------------------Présentation----------------------------------
 
+
 Robot assistant hospitalier
+
 
 Le R.A.H
 
@@ -21,11 +26,14 @@ Le R.A.H
 
 
 
+
 -------------------------------Participants------------------------------------
+
 Mathieu Suinot
 Thomas Bernard
 Victor Labbarade
 Marius
+
 ------------------------------Documentation------------------------------------
 
 
