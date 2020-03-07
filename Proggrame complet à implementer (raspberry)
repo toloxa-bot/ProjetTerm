@@ -1,0 +1,40 @@
+
+//doit recevoir le numero de chambre (i)
+//doit chercher dans la db si (i) necessite une action)
+
+
+//envoie (vert) si (i) nécessite de rentrer dans la chambre
+//envoie (rouge) si (i) ne nécessite pas de rentrer dans la chambre
+//envoie (bleu) si (i) inconnu ou erreur
+
+
+//verif patient:
+//synthese vocal
+//comprehension vocal
+
+
+
+import serial
+
+# '/dev/ttyXXXX' : definition du port d ecoute (remplacer 'X' par le bon nom)
+# 9600 : vitesse de communication
+
+serialArduino = serial.Serial('/dev/ttyXXXX', 9600)
+ser = serial.Serial('/dev/ttyXXXX', 9600)
+
+print("CTRL + C pour arrêter")
+
+
+while True :
+
+  	print(serialArduino.readline())
+
+    led = int(input('Quelle LED souhaitez-vous allumer / eteindre ? (Rouge=1 / Vert=2 / Bleu=3)'))
+    action = input("Souhaitez-vous allumer ou Eteindre la LED ? (Allumer=1 / Eteindre=0)")
+
+    if (action == 1) :
+      ser.write(str(led))
+
+    else :
+      msg = led+3
+      ser.write(str(msg))
